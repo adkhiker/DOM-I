@@ -69,18 +69,14 @@ navArray[5].textContent = siteContent["nav"]["nav-item-6"];
 /* var mySelection = document.querySelector("h1");
 mySelection = "test"; */
 
-function myFunction() {
-  document.querySelector("h1").innerHTML = "Paragraph changed!";
-}
-myFunction();
-// h1.innerHTML = "test";
+document.getElementsByTagName("h1");
 h1.textContent = siteContent["cta"]["h1"];
-h1.style.width = "42%";
+h1.style.width = "72%";
+h1.style.marginRight = "44px";
+h1.innerHTML = "DOM" + "<br />" + "IS" + "<br />" + "AWESOME";
 h1.style.textAlign = "center";
-// h1.innerHTML +=  String.fromCharCode(13);
-// topContent.innerHTML = ‘DOM<br> IS<br> AWESOME’
 button.textContent = siteContent["cta"]["button"];
-button.style.marginLeft = "60px";
+button.style.marginLeft = "-10px";
 
 let h4Array = Array.from(h4);
 h4[0].textContent = siteContent["main-content"]["features-h4"];
