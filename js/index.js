@@ -55,3 +55,20 @@ let button = document.querySelector("button");
 let midImage = document.getElementById("middle-img");
 let txtcontent = document.querySelectorAll("p");
 let h4 = document.querySelectorAll("h4");
+
+cta.setAttribute("src", siteContent["cta"]["img-src"]);
+midImage.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+let navArray = Array.from(nav);
+navArray[0].textContent = siteContent["nav"]["nav-item-1"];
+navArray[1].textContent = siteContent["nav"]["nav-item-2"];
+navArray[2].textContent = siteContent["nav"]["nav-item-3"];
+navArray[3].textContent = siteContent["nav"]["nav-item-4"];
+navArray[4].textContent = siteContent["nav"]["nav-item-5"];
+navArray[5].textContent = siteContent["nav"]["nav-item-6"];
+
+h1.textContent = siteContent["cta"]["h1"];
+h1.style.width = "42%";
+h1.style.textAlign = "center";
+button.textContent = siteContent["cta"]["button"];
+button.style.marginLeft = "60px";
