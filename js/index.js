@@ -9,7 +9,8 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   cta: {
-    h1: "DOM Is Awesome",
+    h1:
+      "Dom Is Awesome",
     button: "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -67,8 +68,31 @@ navArray[3].textContent = siteContent["nav"]["nav-item-4"];
 navArray[4].textContent = siteContent["nav"]["nav-item-5"];
 navArray[5].textContent = siteContent["nav"]["nav-item-6"];
 
+
 h1.textContent = siteContent["cta"]["h1"];
 h1.style.width = "42%";
 h1.style.textAlign = "center";
+// h1.innerHTML +=  String.fromCharCode(13);
+
 button.textContent = siteContent["cta"]["button"];
 button.style.marginLeft = "60px";
+
+let h4Array = Array.from(h4);
+h4[0].textContent = siteContent["main-content"]["features-h4"];
+h4[1].textContent = siteContent["main-content"]["about-h4"];
+h4[2].textContent = siteContent["main-content"]["services-h4"];
+h4[3].textContent = siteContent["main-content"]["product-h4"];
+h4[4].textContent = siteContent["main-content"]["vision-h4"];
+h4[5].textContent = siteContent["contact"]["contact-h4"];
+
+
+let txtArray = Array.from(txtcontent);
+txtArray[0].textContent = siteContent["main-content"]["features-content"];
+txtArray[1].textContent = siteContent["main-content"]["about-content"];
+txtArray[2].textContent = siteContent["main-content"]["services-content"];
+txtArray[3].textContent = siteContent["main-content"]["product-content"];
+txtArray[4].textContent = siteContent["main-content"]["vision-content"];
+txtArray[5].textContent = siteContent["contact"]["address"];
+txtArray[6].textContent = siteContent["contact"]["phone"];
+txtArray[7].textContent = siteContent["contact"]["email"];
+txtArray[8].textContent = siteContent["footer"]["copyright"];
