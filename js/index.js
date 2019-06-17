@@ -9,8 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   cta: {
-    h1:
-      "Dom Is Awesome",
+    h1: "DOM IS AWESOME",
     button: "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -47,7 +46,6 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
-
 //Start here
 let nav = document.querySelectorAll("a");
 let cta = document.getElementById("cta-img");
@@ -68,12 +66,19 @@ navArray[3].textContent = siteContent["nav"]["nav-item-4"];
 navArray[4].textContent = siteContent["nav"]["nav-item-5"];
 navArray[5].textContent = siteContent["nav"]["nav-item-6"];
 
+/* var mySelection = document.querySelector("h1");
+mySelection = "test"; */
 
+function myFunction() {
+  document.querySelector("h1").innerHTML = "Paragraph changed!";
+}
+myFunction();
+// h1.innerHTML = "test";
 h1.textContent = siteContent["cta"]["h1"];
 h1.style.width = "42%";
 h1.style.textAlign = "center";
 // h1.innerHTML +=  String.fromCharCode(13);
-
+// topContent.innerHTML = ‘DOM<br> IS<br> AWESOME’
 button.textContent = siteContent["cta"]["button"];
 button.style.marginLeft = "60px";
 
@@ -84,7 +89,6 @@ h4[2].textContent = siteContent["main-content"]["services-h4"];
 h4[3].textContent = siteContent["main-content"]["product-h4"];
 h4[4].textContent = siteContent["main-content"]["vision-h4"];
 h4[5].textContent = siteContent["contact"]["contact-h4"];
-
 
 let txtArray = Array.from(txtcontent);
 txtArray[0].textContent = siteContent["main-content"]["features-content"];
@@ -100,3 +104,19 @@ txtArray[8].textContent = siteContent["footer"]["copyright"];
 navArray.forEach(function(navitem) {
   navitem.style.color = "green";
 });
+
+function newContent() {
+  let newLink1 = document.createElement("a");
+  newLink1.setAttribute("href", "#");
+  let newLink2 = document.createElement("a");
+  newLink2.setAttribute("href", "#");
+  let newLink1txt = document.createTextNode("More");
+  let newLink2txt = document.createTextNode("Home");
+  newLink1.appendChild(newLink1txt);
+  newLink2.appendChild(newLink2txt);
+  let addlink = document.querySelector("nav");
+  addlink.appendChild(newLink1).style.color = "green";
+  addlink.prepend(newLink2);
+  newLink2.style.color = "green";
+}
+newContent();
