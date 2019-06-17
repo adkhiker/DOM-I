@@ -96,3 +96,7 @@ txtArray[5].textContent = siteContent["contact"]["address"];
 txtArray[6].textContent = siteContent["contact"]["phone"];
 txtArray[7].textContent = siteContent["contact"]["email"];
 txtArray[8].textContent = siteContent["footer"]["copyright"];
+
+navArray.forEach(function(navitem) {
+  navitem.style.color = "green";
+});
